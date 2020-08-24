@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick the Correct Number!</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var userName = prompt("Hi there! We hope you are having fun today. Please, type your name to start the game!")   
+        var userSelection = prompt("Great! This game is so easy and simple. You will be picking a random number from 1 to 5, and the computer will do the same. If the number you pick is like the number the computer picks, then you win. Now, pick a number from 1 to 5!");
+        var computerSelection = Math.floor(Math.random() * 5);
+        alert(userName + "," + "Your answer is " + userSelection + "...");
+        if (userSelection == computerSelection){
+            alert("Congratulations" + " " + userName + "!" + "Your answer is correct!" + ".")
+        }
+        else alert("Sorry" + " " + userName + "," + "your answer is incorrect" + "." + "The correct answer is " + computerSelection + ".");
+
+        alert("Please, " + userName+ ", " + "Play again. You are good!")
+    </script>
+</body>
+</html>
